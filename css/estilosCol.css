@@ -1,0 +1,40 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+
+.hero2 {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('https://dam.cocinafacil.com.mx/wp-content/uploads/2022/01/arepas-colombianas.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+.knowledge2 {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.685) 0%, rgba(0,0,0,.60) 100%), url("https://images.unsplash.com/photo-1658977763816-524ddea9db08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"); 
+background-repeat: no-repeat;
+background-size : cover;
+    overflow: hidden;
+}

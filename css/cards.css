@@ -1,0 +1,105 @@
+
+.panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    margin-top: -70px;
+  }
+  
+  .panel {
+    background: #6B0F9C;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    transition:
+      font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .panel1 { background-image:url(https://hermes-files.pulzo2.com/images/8d48868b-fd36-4b3a-9e18-097450ff8314.jpeg); }
+  .panel2 { background-image:url(http://blog.redbus.co/wp-content/uploads/2020/03/changua-scaled.jpg); }
+  .panel3 { background-image:url(https://images.unsplash.com/photo-1633627360580-4e9594300341?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); }
+  .panel4 { background-image:url(https://d36tnp772eyphs.cloudfront.net/blogs/2/2015/12/shutterstock_1214121682.jpg); }
+  .panel5 { background-image:url(https://www.recetasnestle.com.co/sites/default/files/styles/crop_article_banner_desktop_nes/public/2021-11/Recetas_Banner_arepa-de-choclo-recetas-colombianas_1200x384_0.jpg.webp?itok=89Lll4cx); }
+  
+
+  .panel1Index { background-image:url(https://asisucede.com.mx/wp-content/uploads/2021/11/tuna.jpeg); }
+  .panel2Index { background-image:url(https://laroussecocina.mx/wp-content/uploads/2018/04/aguacate-1.jpg); }
+  .panel3Index { background-image:url(https://images.unsplash.com/photo-1633627360580-4e9594300341?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); }
+  .panel4Index { background-image:url(https://extra.com.co/wp-content/uploads/2022/01/Lulo-2.jpg); }
+  .panel5Index { background-image:url(http://elcampesino.co/wp-content/uploads/2015/12/115.jpg); }
+  
+
+  /* Flex Children */
+  .panel > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .panel p {
+    text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.08), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 2em;
+  }
+  
+  /* First text element */
+  .panel p:nth-child(1) {
+    transform: translateY(-100%);
+  }
+  
+  .panel.open-active p:nth-child(1) {
+    transform: translateY(0);
+  }
+  
+  /* Second text element - main text */
+  .panel p:nth-child(2) {
+    font-size: 4em;
+    font-family: 'Pacifico', cursive;
+    padding: 8px;
+  }
+  
+  /* Third text element */
+  .panel p:nth-child(3) {
+    transform: translateY(100%);
+  }
+  
+  .panel.open-active p:nth-child(3) {
+    transform: translateY(0);
+  }
+      
+  .panel.open {
+    flex: 5;
+    font-size: 40px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .panel p {
+      font-size: 1em;
+    }
+  }
+  
+  
+  /* https://source.unsplash.com/user/erondu/1600x900
+   */
+
+   /*fecha*/
+   #fechahoy{font-size:1.2em;color:rgb(238, 121, 11);margin:12px; font-family: 'Pacifico', cursive;}
