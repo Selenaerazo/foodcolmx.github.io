@@ -1,4 +1,5 @@
 
+
 .panels {
     min-height: 100vh;
     overflow: hidden;
@@ -12,12 +13,7 @@
     color: white;
     text-align: center;
     align-items: center;
-    /* Safari transitionend event.propertyName === flex */
-    /* Chrome + FF transitionend event.propertyName === flex-grow */
-    transition:
-      font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-      flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-      background 0.2s;
+
     font-size: 20px;
     background-size: cover;
     background-position: center;
@@ -43,7 +39,7 @@
   .panel5Index { background-image:url(http://elcampesino.co/wp-content/uploads/2015/12/115.jpg); }
   
 
-  /* Flex Children */
+  /* Flex  */
   .panel > * {
     margin: 0;
     width: 100%;
@@ -61,30 +57,7 @@
     font-size: 2em;
   }
   
-  /* First text element */
-  .panel p:nth-child(1) {
-    transform: translateY(-100%);
-  }
-  
-  .panel.open-active p:nth-child(1) {
-    transform: translateY(0);
-  }
-  
-  /* Second text element - main text */
-  .panel p:nth-child(2) {
-    font-size: 4em;
-    font-family: 'Pacifico', cursive;
-    padding: 8px;
-  }
-  
-  /* Third text element */
-  .panel p:nth-child(3) {
-    transform: translateY(100%);
-  }
-  
-  .panel.open-active p:nth-child(3) {
-    transform: translateY(0);
-  }
+
       
   .panel.open {
     flex: 5;
@@ -98,8 +71,6 @@
   }
   
   
-  /* https://source.unsplash.com/user/erondu/1600x900
-   */
 
    /*fecha*/
    #fechahoy{font-size:1.2em;color:rgb(238, 121, 11);margin:12px; font-family: 'Pacifico', cursive;}
