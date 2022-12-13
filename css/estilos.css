@@ -25,7 +25,7 @@ body {
 }
 
 
-.hero {
+.food {
     width: 100%;
     height: 100vh;
     min-height: 600px;
@@ -36,7 +36,7 @@ body {
     color: #fff;
 }
 
-.hero::before {
+.food::before {
     content: "";
     position: absolute;
     top: 0;
@@ -128,7 +128,7 @@ nav ul li:hover {
 
 
 
-.hero__container {
+.food__container {
     max-width: 800px;
     --padding-container: 0;
     display: grid;
@@ -139,12 +139,12 @@ nav ul li:hover {
     text-align: center;
 }
 
-.hero__title {
+.food__title {
     font-size: 3rem;
     font-family: 'Pacifico', cursive;
 }
 
-.hero__paragraph {
+.food__paragraph {
     margin-bottom: 20px;
 }
 
@@ -321,19 +321,19 @@ background-size : cover;
 }
 
 
-.testimony{
+.presentation{
     background: linear-gradient(rgba(0, 0, 0, 0.925) 0%, rgba(0,0,0,.60) 100%), url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black_from_a_camera.jpg/1200px-Black_from_a_camera.jpg"); 
     color: #fff;
 }
 
-.testimony__container{
+.presentation__container{
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     gap: 1em;
     align-items: center;
 }
 
-.testimony__body{
+.presentation__body{
     display: grid;
     grid-template-columns: 1fr max-content;
     justify-content: space-between;
@@ -346,13 +346,13 @@ background-size : cover;
 }
 
 
-.testimony__body--show{
+.presentation__body--show{
     pointer-events: unset;
     opacity: 1;
     transition: opacity 1.5s ease-in-out;
 }
 
-.testimony__img{
+.presentation__img{
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -360,11 +360,11 @@ background-size : cover;
     object-position: 50% 30%;
 }
 
-.testimony__texts{
+.presentation__texts{
     max-width: 700px;
 }
 
-.testimony__course{
+.presentation__course{
     background-color: rgb(252, 227, 9);
     color: rgb(0, 0, 0);
     display: inline-block;
@@ -372,7 +372,7 @@ background-size : cover;
     font-family: 'Pacifico', cursive;
 }
 
-.testimony__arrow{
+.presentation__arrow{
     width: 90%;
     cursor: pointer;
 }
@@ -584,7 +584,7 @@ iframe {
         cursor: pointer;
     }
 
-    .hero__title{
+    .food__title{
         font-size: 2.5rem;
     }
 
@@ -610,11 +610,11 @@ iframe {
         justify-self: center;
     }
 
-    .testimony__container{
+    .presentation__container{
         grid-template-columns: 30px 1fr 30px;
     }
 
-    .testimony__body{
+    .presentation__body{
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content;
         gap: 3em;
@@ -622,7 +622,7 @@ iframe {
     }
 
 
-    .testimony__img{
+    .presentation__img{
         width: 200px;
         height: 200px;
         
@@ -661,11 +661,11 @@ iframe {
 @media (max-width:600px){
 
     
-    .hero__title{
+    .food__title{
         font-size: 2rem;
     }
 
-    .hero__paragraph{
+    .food__paragraph{
         font-size: 1rem;
     }
 
@@ -686,20 +686,20 @@ iframe {
         font-size: 2rem;
     }
 
-    .testimony{
+    .presentation{
         --padding-container: 60px 0;
     }
 
-    .testimony__container{
+    .presentation__container{
         grid-template-columns: 28px 1fr 28px;
         gap: .9em;
     }
 
-    .testimony__arrow{
+    .presentation__arrow{
         width: 100%;
     }
 
-    .testimony__course{
+    .presentation__course{
         margin-top: 15px;
     }
 
@@ -760,16 +760,16 @@ word-spacing: -6pt;
         }
 
 /*tabla*/
-table.responsivegene {border: 1px solid #ccc;width: 100%;margin:0;padding:0;border-collapse: collapse;border-spacing: 1; }
-table.responsivegene tr {border: 1px solid #ddd;padding: 5px; }
-table.responsivegene th, table td { padding: 10px;text-align: center;}
-table.responsivegene th {text-transform: uppercase;font-size: 14px;letter-spacing: 1px;}
+table.responsive-tipico {border: 1px solid #ccc;width: 100%;margin:0;padding:0;border-collapse: collapse;border-spacing: 1; }
+table.responsive-tipico tr {border: 1px solid #ddd;padding: 5px; }
+table.responsive-tipico th, table td { padding: 10px;text-align: center;}
+table.responsive-tipico th {text-transform: uppercase;font-size: 14px;letter-spacing: 1px;}
 
 @media screen and (max-width: 600px) {
-    table.responsivegene {border: 0;}
-    table.responsivegene thead {display: none;}
-    table.responsivegene tr {margin-bottom: 10px;display: block;border-bottom: 2px solid #ddd;}
-    table.responsivegene td {display: block;text-align: right;font-size: 13px;border-bottom: 1px dotted #ccc;}
-    table.responsivegene td:last-child { border-bottom: 0;}
-    table.responsivegene td:before {content: attr(data-label);float: left;text-transform: uppercase;font-weight: bold;}
+    table.responsive-tipico {border: 0;}
+    table.responsive-tipico thead {display: none;}
+    table.responsive-tipico tr {margin-bottom: 10px;display: block;border-bottom: 2px solid #ddd;}
+    table.responsive-tipico td {display: block;text-align: right;font-size: 13px;border-bottom: 1px dotted #ccc;}
+    table.responsive-tipico td:last-child { border-bottom: 0;}
+    table.responsive-tipico td:before {content: attr(data-label);float: left;text-transform: uppercase;font-weight: bold;}
   }
