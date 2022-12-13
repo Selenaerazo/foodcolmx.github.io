@@ -99,9 +99,9 @@ document.addEventListener('DOMContentLoaded', APP.init);
 /*audio*/
 const audio = new Audio("");
 
-audio.volume = 0.5;               // Volumen al 50%
-console.log(audio.paused);        // true (no se está reproduciendo)
-console.log(audio.currentTime);   // 0
-console.log(audio.duration);      // 17.81551 (17 secs, 815.51 ms)
-audio.currentTime = 5;            // Move to 5 secs
+audio.volume = 0.5;              
+console.log(audio.paused);       
+console.log(audio.currentTime);   
+console.log(audio.duration);     
+audio.currentTime = 5;           
 audio.play();   
